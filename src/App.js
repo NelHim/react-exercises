@@ -1,8 +1,10 @@
+import Button from "./components/Button";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-2xl text-blue-500 font-bold text-center">React Exercises</h1>
-    </div>
+      <div className="grid justify-center items-center w-full h-screen font-bold bg-[#FEC800]">
+        <Button />
+      </div>
   );
 }
 
