@@ -1,7 +1,11 @@
+import Button from "./components/Button";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-2xl text-blue-500 font-bold text-center">React Exercises</h1>
+    <div className="flex gap-5 justify-center items-center w-full h-screen font-bold ">
+      <Button position={1}>Button 1</Button>
+      <Button>Button 2</Button>
+      <Button>Button 3</Button>
     </div>
   );
 }
