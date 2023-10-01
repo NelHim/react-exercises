@@ -1,7 +1,21 @@
+import Button from "./components/Button";
+import { useState } from "react";
+
 function App() {
+
+  const [count, setCount] = useState(0)
+
+  function handleClick () {
+    setCount(prevCount => prevCount + 1)
+  }
+
   return (
-    <div>
-      <h1 className="text-2xl text-blue-500 font-bold text-center">React Exercises</h1>
+    <div className="h-screen grid justify-center items-center">
+      <div className="text-center">
+        <p className="mb-5">Button has been clicked: {count}</p>
+        <Button incrementCount={handleClick}/>
+      </div>
+      
     </div>
   );
 }
