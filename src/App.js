@@ -1,7 +1,13 @@
 function App() {
+
+  let array = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
+  let listArray = array.map(animal => <li key={animal}>{animal}</li>)
+
   return (
-    <div>
-      <h1 className="text-2xl text-blue-500 font-bold text-center">React Exercises</h1>
+    <div className="h-screen grid justify-center items-center">
+      <ul className="text-2xl font-semibold list-disc">
+        {listArray}
+      </ul>
     </div>
   );
 }
