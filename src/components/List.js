@@ -12,9 +12,8 @@ const List = ({items}) => {
             return <li className='border border-gray-400 py-4 px-6' key={item}>{`🐮 ${item}`}</li>
         }else if (item === 'sheep'){
             return <li className='border border-gray-400 py-4 px-6' key={item}>{`🐏 ${item}`}</li>
-        }else if (item === 'horse'){
-            return <li className='border border-gray-400 py-4 px-6' key={item}>{`🐎 ${item}`}</li>
         }
+        return <li className='border border-gray-400 py-4 px-6' key={item}>{`🐎 ${item}`}</li>
     })
   return (
     <ul>
